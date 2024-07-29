@@ -1,0 +1,38 @@
+when we use lasso and ridge regression before use this equation we always standaradize our dataset
+
+
+Feature Scaling and Standardization are two related but distinct concepts in machine learning and data preprocessing.
+
+Feature Scaling: Feature scaling is the process of rescaling the values of a feature (or variable) to a common range, usually between 0 and 1 or -1 and 1. This is done to prevent features with large ranges from dominating the model or to ensure that all features are treated equally.
+
+Example:
+
+Suppose you have a dataset with two features: age (in years) and salary (in thousands of dollars). The age feature ranges from 20 to 80, while the salary feature ranges from 30 to 100. To scale these features, you can use a scaling function that maps the values to a common range, such as:
+
+age becomes (age - 20) / (80 - 20) = (age - 20) / 60
+salary becomes (salary - 30) / (100 - 30) = (salary - 30) / 70
+After scaling, both features will have values between 0 and 1, making it easier to compare and combine them.
+
+Standardization: Standardization is a specific type of feature scaling that involves subtracting the mean and dividing by the standard deviation for each feature. This process is also known as Z-scoring.
+
+Standardization is often used to:
+
+Reduce the effect of outliers
+Improve the performance of certain machine learning algorithms
+Ensure that all features have similar scales
+Example (using the same dataset as above):
+
+Calculate the mean and standard deviation for age: mean_age = 50, std_age = 15.5
+Calculate the mean and standard deviation for salary: mean_salary = 65, std_salary = 17.5
+Standardize age and salary using these values:
+age_std = (age - mean_age) / std_age
+salary_std = (salary - mean_salary) / std_salary
+After standardization, both features will have values with a mean of 0 and a standard deviation of 1, making it easier to compare and combine them.
+
+In summary:
+
+Feature scaling is a broader concept that involves rescaling features to a common range.
+Standardization is a specific type of feature scaling that involves subtracting the mean and dividing by the standard deviation for each feature.
+
+
+
