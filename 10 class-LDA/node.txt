@@ -1,0 +1,1 @@
+LDA is more use than logistic regression -> to handle multi class value response 
